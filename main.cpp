@@ -24,6 +24,40 @@ int main()
 
     cout <<endl<<endl;
 
+    cout << "2. Create an algorithm that reads an undetermined set of values ​​and reports, at the end, the highest and lowest values ​​read. The algorithm should end if the user enters a negative value or the value 0." <<endl<<endl;
+
+    int bigger = 0;
+    int lower = 2147483647;
+    int numberInformed = 1;
+    while (numberInformed > 0)
+    {
+        cout << "Inform an value:";
+        cin >> numberInformed;
+
+        if (numberInformed > 0)
+        {
+            if (numberInformed < lower)
+            {
+                lower = numberInformed;
+            }
+
+            if (numberInformed > bigger)
+            {
+                bigger = numberInformed;
+            }
+        }
+    }
+
+    if (bigger == 0)
+    {
+        cout<<"No number entered";
+    }
+    else
+    {
+        cout<<"Among all the numbers entered, the largest was " << bigger << " and the smallest was " << lower;
+    }
+
+    cout <<endl<<endl;
     
     return 0;
 }
