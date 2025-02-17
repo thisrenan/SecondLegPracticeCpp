@@ -58,6 +58,17 @@ int main()
     }
 
     cout <<endl<<endl;
+
+    cout << "3. Create an algorithm that requests a value from the user and generates the multiplication table for that value. For example, if the user enters the value 2, the multiplication table for the number 2 should be generated, ranging from 0 to 10." <<endl<<endl;
+
+    int number;
+    cout << "Inform the number:";
+    cin >> number;
+    cout << "The multiplication table for the value " << number << " is:" << endl;
+    for (int factor = 0; factor <= 10; factor++)
+    {
+        cout << factor << " X " << number << " = " << (factor * number) << endl;
+    }
     
     return 0;
 }
