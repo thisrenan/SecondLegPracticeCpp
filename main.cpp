@@ -179,6 +179,21 @@ int main()
 
         aux++;
     }   
+
+    cout <<endl<<endl;
+
+    cout << "9. Write a program that asks for the ages of 10 people and displays the number of people who are 18 or older." <<endl<<endl;
+
+    int olderThan18 = 0;
+    int age;
+    for (int i = 1; i <= 10; i++){
+        cout << i << " - Inform the age";
+        cin >> age;
+        if (age >= 18)
+            olderThan18++;
+    }
     
+    cout << "From 10 ages entered, " << olderThan18 << " are over 18 years old"<<endl;
+
     return 0;
 }
