@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -7,6 +8,8 @@ int main()
     cout << "# SecondLegPracticeCpp"<<endl<<endl;
     cout << "# Lets practice what we have been studying."<<endl<<endl;
     
+
+    /*
     cout << "1. Chico is 1.50 meters tall and grows 2 centimeters per year, while Ze is 1.10 meters tall and grows 3 centimeters per year. Create an algorithm that calculates and prints how many years it will take for Zé to be taller than Chico." <<endl<<endl;
     
     float heightChico =1.5;
@@ -104,7 +107,43 @@ int main()
     } while (floatNumber < 0);
     cout << "The number entered is valid" << endl;
 
+    cout <<endl<<endl;
+*/
+    cout << "6. Write a program for a simple calculator that asks the user for two operands as input, selects one of the options from the list (1- sum, 2- product, 3- division, 4- power) and displays the result. The algorithm should run repeatedly until both operands are equal to zero." <<endl<<endl;
 
+    float firstNumber, secondNumber, result;
+    int operation;
+    cout << "To exit, inform 0 in both operands"<<endl;
+    do {
+        cout << "Inform the first operand";
+        cin >> firstNumber;
+        cout << "Inform the second operand";
+        cin >> secondNumber;
+        cout << "Choose the operation: 1. addition; 2. multiplication; 3. division or 4. exponentiation";
+        do{
+            cin >> operation;
+            switch (operation){
+                case 1:
+                    result = firstNumber + secondNumber;
+                break;
+                case 2:
+                    result = firstNumber * secondNumber;
+                break;
+                case 3:
+                    result = firstNumber / secondNumber;
+                break;
+                case 4:
+                    result = pow(firstNumber, secondNumber); //from math.h library [#include <math.h>]
+                break;
+                default:
+                    cout << "Invalid operation.";
+
+            }
+        } while (operation < 1 || operation > 4);
+
+        cout << "The result of the operation is: " << result << endl;
+
+    } while (firstNumber != 0 || secondNumber != 0);
 
     
     return 0;
