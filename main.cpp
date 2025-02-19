@@ -91,6 +91,21 @@ int main()
     cout << count << " numbers were entered and the result of the sum is " << add << "."<<endl;
     cout << "Therefore, the average is " << ((float) add / (float) count) << endl;
     
+    cout <<endl<<endl;
+
+    cout << "5. Write a program that prompts the user for a positive real number. Check if the number is really positive, and if not, prompt the user to enter it again (this process can be repeated countless times and is called consistency, as it ensures that the number will be valid after data entry). Outputs: • Prompt to user ='Enter a positive real number'; • Valid number case = 'The number entered is valid'; • Invalid number case = 'Invalid number, try again'" <<endl<<endl;
+
+    float floatNumber;
+    cout << "Enter a positive real number";
+    do{
+        cin >> floatNumber;
+        if (floatNumber < 0)
+            cout << "Invalid number, try again";        
+    } while (floatNumber < 0);
+    cout << "The number entered is valid" << endl;
+
+
+
     
     return 0;
 }
