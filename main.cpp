@@ -158,6 +158,27 @@ int main()
     }
 
     cout << "The factorial number is " << factorial;
+
+    cout <<endl<<endl;
+
+    cout << "8. Write an algorithm that generates the Fibonacci series, up to the term n entered by the user. For example, if the user enters the value 6, 8 should be displayed on the screen. Note: Fibonacci series: 1, 1, 2, 3, 5, 8, 13, 21, ..."<<endl<<endl;
+
+    int n, aux=3, temp, last=1, lastButOne=1;
+
+    cout << "How much terms to show?";
+    cin >> n;
+
+    cout << lastButOne << endl << last << endl;
+
+    while(aux<=n){
+        cout << (last+lastButOne) << endl;
+
+        temp = lastButOne;
+        lastButOne = last;
+        last = last + temp;
+
+        aux++;
+    }   
     
     return 0;
 }
