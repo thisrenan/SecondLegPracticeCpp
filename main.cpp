@@ -195,5 +195,26 @@ int main()
     
     cout << "From 10 ages entered, " << olderThan18 << " are over 18 years old"<<endl;
 
+    cout <<endl<<endl;
+
+    cout << "10. Write a program that checks whether a number entered by the user is a prime number, that is, a number that is only divisible by 1 and itself. Outputs: - Request to the user = 'Enter an integer:' If it is prime = 'The number is prime'; - If it is not prime = 'The number is not prime'." <<endl<<endl;
+
+    number = 0;
+    cout << "Inform an integer number:";
+    cin >> number;
+
+    bool prime = true;
+
+    for (int i = 2; i <= (number/2); i++){
+        if (number % i == 0)
+            prime = false;
+        break;
+    }
+
+    if (prime)
+        cout << "The number " << number << " is prime." << endl;
+    else
+        cout << "The number " << number << " is not prime." << endl;
+
     return 0;
 }
