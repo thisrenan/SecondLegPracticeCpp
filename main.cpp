@@ -7,7 +7,7 @@ int main()
     cout << "# SecondLegPracticeCpp"<<endl<<endl;
     cout << "# Lets practice what we have been studying."<<endl<<endl;
     
-    cout << "1. Chico is 1.50 meters tall and grows 2 centimeters per year, while Zé is 1.10 meters tall and grows 3 centimeters per year. Create an algorithm that calculates and prints how many years it will take for Zé to be taller than Chico." <<endl<<endl;
+    cout << "1. Chico is 1.50 meters tall and grows 2 centimeters per year, while Ze is 1.10 meters tall and grows 3 centimeters per year. Create an algorithm that calculates and prints how many years it will take for Zé to be taller than Chico." <<endl<<endl;
     
     float heightChico =1.5;
     float heightZe = 1.1;
@@ -20,11 +20,11 @@ int main()
         heightZe = heightZe + growthZe;
         counterYears++;
     }
-    cout << "After " << counterYears << " years, Zé has become taller than Chico. Zé is " << heightChico << "m tall and Chico is " << heightZe << "m tall.";
+    cout << "After " << counterYears << " years, Ze has become taller than Chico. Ze is " << heightChico << "m tall and Chico is " << heightZe << "m tall.";
 
     cout <<endl<<endl;
 
-    cout << "2. Create an algorithm that reads an undetermined set of values ​​and reports, at the end, the highest and lowest values ​​read. The algorithm should end if the user enters a negative value or the value 0." <<endl<<endl;
+    cout << "2. Create an algorithm that reads an undetermined set of values and reports, at the end, the highest and lowest values read. The algorithm should end if the user enters a negative value or the value 0." <<endl<<endl;
 
     int bigger = 0;
     int lower = 2147483647;
@@ -69,6 +69,28 @@ int main()
     {
         cout << factor << " X " << number << " = " << (factor * number) << endl;
     }
+
+    cout <<endl<<endl;
+
+    cout << "4. Create a program that requests an undetermined number of whole numbers from the user. The program should calculate and write the arithmetic mean of only even numbers. Data entry should end when the number 0 (ZERO) is entered." <<endl<<endl;
+
+    int add = 0;
+    int count = 0;
+    number = 0;
+    do
+    {
+        cout << "Inform the number:";
+        cin >> number;
+        if (number != 0)
+        {
+            add += number;
+            count++;
+        }
+    } while (number != 0);
+
+    cout << count << " numbers were entered and the result of the sum is " << add << "."<<endl;
+    cout << "Therefore, the average is " << ((float) add / (float) count) << endl;
+    
     
     return 0;
 }
