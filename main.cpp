@@ -7,9 +7,7 @@ int main()
 {
     cout << "# SecondLegPracticeCpp"<<endl<<endl;
     cout << "# Lets practice what we have been studying."<<endl<<endl;
-    
 
-    /*
     cout << "1. Chico is 1.50 meters tall and grows 2 centimeters per year, while Ze is 1.10 meters tall and grows 3 centimeters per year. Create an algorithm that calculates and prints how many years it will take for Zé to be taller than Chico." <<endl<<endl;
     
     float heightChico =1.5;
@@ -96,7 +94,7 @@ int main()
     
     cout <<endl<<endl;
 
-    cout << "5. Write a program that prompts the user for a positive real number. Check if the number is really positive, and if not, prompt the user to enter it again (this process can be repeated countless times and is called consistency, as it ensures that the number will be valid after data entry). Outputs: • Prompt to user ='Enter a positive real number'; • Valid number case = 'The number entered is valid'; • Invalid number case = 'Invalid number, try again'" <<endl<<endl;
+    cout << "5. Write a program that prompts the user for a positive real number. Check if the number is really positive, and if not, prompt the user to enter it again (this process can be repeated countless times and is called consistency, as it ensures that the number will be valid after data entry). Outputs: - Prompt to user ='Enter a positive real number'; - Valid number case = 'The number entered is valid'; - Invalid number case = 'Invalid number, try again'" <<endl<<endl;
 
     float floatNumber;
     cout << "Enter a positive real number";
@@ -108,7 +106,7 @@ int main()
     cout << "The number entered is valid" << endl;
 
     cout <<endl<<endl;
-*/
+
     cout << "6. Write a program for a simple calculator that asks the user for two operands as input, selects one of the options from the list (1- sum, 2- product, 3- division, 4- power) and displays the result. The algorithm should run repeatedly until both operands are equal to zero." <<endl<<endl;
 
     float firstNumber, secondNumber, result;
@@ -145,6 +143,21 @@ int main()
 
     } while (firstNumber != 0 || secondNumber != 0);
 
+    cout <<endl<<endl;
+
+    cout << "7. Write an algorithm that asks for an integer value and reports, at the end, the factorial of this value. Note: for example, the factorial of 5 is 120, since 5 x 4 x 3 x 2 x 1 = 120."<<endl<<endl;
+
+    number = 0;
+    cout << "Inform the number:";
+    cin >> number;
+    int factorial = 1;
+    while (number > 0){
+        cout << "Multiplying by..." << number << endl;
+        factorial *= number;
+        number--;
+    }
+
+    cout << "The factorial number is " << factorial;
     
     return 0;
 }
