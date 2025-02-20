@@ -1,6 +1,7 @@
 # SecondLegPracticeCpp
 
 This list of exercises is related to C++ programming studies and corresponds to the second part of the study.
+
 The list involves variable manipulation, programming logic, repetition loops and switch statements.
 
 # Welcome to the First C++ Practice
