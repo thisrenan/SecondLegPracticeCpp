@@ -4,7 +4,7 @@ This list of exercises is related to C++ programming studies and corresponds to 
 
 The list involves variable manipulation, programming logic, repetition loops and switch statements.
 
-# Welcome to the First C++ Practice
+# Welcome to the Second C++ Practice
 
 Lets practice what we have been studying.
 
